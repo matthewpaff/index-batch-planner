@@ -1,0 +1,14 @@
+{
+  "records": [
+    {
+      "id": "a0",
+      "bytes": 2
+    },
+    {
+      "id": "b0",
+      "bytes": 3
+    }
+  ],
+  "max_records": 1,
+  "max_bytes": 5
+}
