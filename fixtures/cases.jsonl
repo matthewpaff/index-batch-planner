@@ -1,0 +1,1 @@
+{"description": "split batches at the supplied record-count limit", "expected": {"batches": [{"bytes": 2, "ids": ["a0"]}, {"bytes": 3, "ids": ["b0"]}]}, "id": "batch-0000", "input": {"max_bytes": 5, "max_records": 1, "records": [{"bytes": 2, "id": "a0"}, {"bytes": 3, "id": "b0"}]}}
