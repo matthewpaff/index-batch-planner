@@ -23,3 +23,4 @@
 {"description": "flush before a record exceeds the remaining byte budget", "expected": {"batches": [{"bytes": 4, "ids": ["a22"]}, {"bytes": 4, "ids": ["b22"]}]}, "id": "batch-0022", "input": {"max_bytes": 5, "max_records": 5, "records": [{"bytes": 4, "id": "a22"}, {"bytes": 4, "id": "b22"}]}}
 {"description": "reject a single record larger than the budget", "expected_error": true, "id": "batch-0023", "input": {"max_bytes": 5, "max_records": 5, "records": [{"bytes": 6, "id": "a23"}]}}
 {"description": "return no batches for empty input", "expected": {"batches": []}, "id": "batch-0024", "input": {"max_bytes": 1, "max_records": 1, "records": []}}
+{"description": "split batches at the supplied record-count limit", "expected": {"batches": [{"bytes": 2, "ids": ["a25"]}, {"bytes": 3, "ids": ["b25"]}]}, "id": "batch-0025", "input": {"max_bytes": 5, "max_records": 1, "records": [{"bytes": 2, "id": "a25"}, {"bytes": 3, "id": "b25"}]}}
